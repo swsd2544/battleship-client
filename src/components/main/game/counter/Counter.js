@@ -14,7 +14,7 @@ const Counter = (props) => {
   //reset when server reset, game reset, game end
   useEffect(() => {
     const timeInterval = setInterval(() => {
-      if (props.start) {
+      if (props.start && props.player !== "") {
         if (props.reset) {
           setTimer(10);
           props.setReset(false);
