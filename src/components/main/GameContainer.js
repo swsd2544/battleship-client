@@ -3,7 +3,7 @@ import { useState, useEffect, useContext, useCallback } from "react";
 import Game from "./game/Game";
 import Chat from "./chat/Chat";
 import GameHeader from "../Header/GameHeader";
-import GameSingle from "./game/GameSingle";
+// import GameSingle from "./game/GameSingle";
 import { SocketContext } from "../../context/socket";
 import { useDispatch, useSelector } from "react-redux";
 import { enemyActions } from "../../store/enemySlice";
@@ -95,7 +95,15 @@ const GameContainer = (props) => {
     <Fragment>
       <GameHeader />
       <div style={{ position: "relative", top: "3rem" }}>
-        {props.mode === "multi" ? (
+        <Game
+          key={resetGameKey}
+          gameStart={playable}
+          currentPlayer={currentPlayer}
+          setCurrentPlayer={setCurrentPlayer}
+          onReset={() => setResetGameKey((prev) => !prev)}
+        />
+        <Chat messages={messages} setMessages={setMessages} />
+        {/* {props.mode === "multi" ? (
           <>
             <Game
               key={resetGameKey}
@@ -115,7 +123,7 @@ const GameContainer = (props) => {
             setCurrentPlayer={setCurrentPlayer}
             onReset={() => setResetGameKey((prev) => !prev)}
           />
-        )}
+        )} */}
       </div>
     </Fragment>
   );

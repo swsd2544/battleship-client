@@ -25,14 +25,14 @@ const RoomNav = () => {
           <li>
             <NavLink to="/instruction">Instruction</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/game"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
               Single Player
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <button onClick={onLogoutHandler}>Logout</button>
           </li>

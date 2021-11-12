@@ -79,9 +79,9 @@ function App() {
             <MainHeader />
             <Credit />
           </Route>
-          <Route path="/game" exact>
+          {/* <Route path="/game" exact>
             <GameContainer mode="single" />
-          </Route>
+          </Route> */}
           <Route path="/game/:roomId">
             <GameContainer mode="multi" />
           </Route>

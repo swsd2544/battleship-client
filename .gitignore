@@ -7,7 +7,7 @@
 /coverage
 
 # cache
-battleship-client/.eslintcache
+**/.eslintcache
 
 # production
 /build
