@@ -1,0 +1,27 @@
+.instruction_container {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 9%;
+}
+
+.instruction_container div {
+  padding: 16px;
+  font-size: 25px;
+  font-family: verdana;
+}
+
+.control {
+  display: flex;
+}
+
+.boxred {
+  height: 2rem;
+  width: 2rem;
+  background-color: red;
+}
+
+.boxblack {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+}

@@ -1,0 +1,39 @@
+.bodybox {
+  display: flex;
+  /* align-items: ; */
+  flex-direction: column;
+}
+
+.bodybox h3 {
+  margin-top: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.actions button {
+  font: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #07cf4a;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #8ee48e;
+}
+
+.actions .submit {
+  background-color: #eb2c13;
+  color: white;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+  background-color: #ec5f46;
+}

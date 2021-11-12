@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 70vw;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  color: #5a1a01;
+  cursor: pointer;
+  background-color: #07cf93;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #8ee4ca;
+}
+.control {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+
+@media (min-width: 768px) {
+  .control {
+    align-items: center;
+    flex-direction: row;
+  }
+}

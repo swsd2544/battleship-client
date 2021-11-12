@@ -1,0 +1,21 @@
+.name_container {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.name_container div {
+  padding: 30px;
+  font-family: "Poppins";
+}
+
+.name_container a {
+  color: rgb(151, 51, 4);
+  font-size: 50px;
+  text-decoration: none;
+  transition: all 40ms;
+}
+
+.name_container a:hover {
+  color: rgb(200, 51, 4);
+  font-size: 52px;
+}
