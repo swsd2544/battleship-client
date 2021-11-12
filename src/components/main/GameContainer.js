@@ -100,6 +100,7 @@ const GameContainer = (props) => {
           gameStart={playable}
           currentPlayer={currentPlayer}
           setCurrentPlayer={setCurrentPlayer}
+          setPlayable={setPlayable}
           onReset={() => setResetGameKey((prev) => !prev)}
         />
         <Chat messages={messages} setMessages={setMessages} />

@@ -138,6 +138,7 @@ const Game = (props) => {
     enemyShip3Health = 0;
     enemyShip4Health = 0;
 
+    props.setPlayable(false);
     props.onReset();
   }, [dispatch, socket, match.url, props]);
 
@@ -145,6 +146,7 @@ const Game = (props) => {
     //console.log("leaving the room!!!!");
     history.push("/");
     setGameEnd(false);
+    props.setPlayable(false);
     dispatch(resetScore());
     dispatch(enemyActions.resetScore());
     dispatch(resetUserBoard());
